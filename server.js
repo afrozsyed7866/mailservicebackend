@@ -18,7 +18,7 @@ require('dotenv').config(); // Load .env variables
    }
 
    // Middleware
-   app.use(cors({ origin: 'https://mailingservices-fe-qu5a.vercel.app' }));
+app.use(cors({ origin: '*' })); // Allow all origins
    app.use(express.json());
 
    // Configure multer for file uploads
